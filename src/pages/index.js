@@ -1,18 +1,15 @@
 import React from 'react'
 import { Link } from 'gatsby';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faProjectDiagram, 
-  faGraduationCap, 
-  faInfoCircle, 
-  faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import { faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-
 import Layout from '../components/layout';
 import Landing from '../components/landing';
 import CallToAction from '../components/calltoaction';
 import Container from '../components/container';
-import Footer from '../components/footer';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faProjectDiagram, 
+  faGraduationCap, 
+  faInfoCircle } from '@fortawesome/free-solid-svg-icons';
 
 import image from '../images/pokarobert.png';
 
@@ -59,35 +56,6 @@ const IndexPage = () => (
         <p><strong>Toivon pääseväni sellaisiin työtehtäviin, missä pääsen jatkuvasti kehittämään ja haastamaan itseäni!</strong></p>
       </article>
     </Container>
-    <Footer>
-      <div>
-        <h3>Yhteystiedot</h3>
-        <a href="mailto:robert-kuhlmann@outlook.com">
-          <FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon>
-        </a>
-        <a href="https://www.instagram.com/kuuuulman/" target="_blank">
-          <FontAwesomeIcon icon={faInstagram}></FontAwesomeIcon>
-        </a>
-        <a href="https://www.linkedin.com/in/robert-kuhlmann/" target="_blank">
-          <FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon>
-        </a>
-      </div>
-      <div>
-        <h3>Navigointi</h3>
-        <ul>
-          <li><Link to="/">Projektit</Link></li>
-          <li><Link to="/">Osaamiseni</Link></li>
-          <li><Link to="/">Lisätietoja</Link></li>
-        </ul>
-      </div>
-    </Footer>
-    <div style={{
-      backgroundColor: 'var(--dark)',
-      color: 'white',
-      textAlign: 'center',
-      padding: '10px 20px'}}>
-      <p>Robert Kuhlmann 2018</p>
-    </div>
   </Layout>
 )
 
