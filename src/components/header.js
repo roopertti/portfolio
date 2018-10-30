@@ -3,6 +3,8 @@ import { Link } from 'gatsby';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 
+import { sitemap } from '../sitemap';
+
 import styled from 'styled-components';
 
 const Navbar = styled.nav`
@@ -85,9 +87,11 @@ class Header extends Component {
             <Navbar active={this.state.active}>
                 <span><Link to="/">{this.props.siteTitle}</Link></span>
                 <ul>
-                    <li><Link to="/projektit">Projektit</Link></li>
-                    <li>Osaamiseni</li>
-                    <li>Lisätietoja</li>
+                    {sitemap.map(site => (
+                        <li key={site.name}>
+                            <Link to={site.path}>{site.name}</Link>
+                        </li>
+                    ))}
                 </ul>
                 <button onClick={this.toggleMenu}>
                     <FontAwesomeIcon icon={faBars}></FontAwesomeIcon>

@@ -66,13 +66,13 @@ export const projectData = [
         text: 'Tässä yhteen viikonloppuun nopeasti kasaan paiskittu perus staattisesta sisällöstä koostuva sivusto, tavoitteena kokeilla Gatsby-työkalun ominaisuuksia yhdessä React:in kanssa. Toivottavasti portfolio on asiansa ajanut tähän asti!',
         published: new Date(2018, 10, 1, 0, 0, 0, 0),
         image: 'portfolio.png',
-        github: '',
-        site: ''
+        github: 'https://github.com/roopertti/portfolio',
+        site: null
     }
 ];
 
 export const returnProjectsSorted = () => (projectData.sort((a, b) => {
-    return a.published.getTime() - b.published.getTime();
+    return b.published.getTime() - a.published.getTime();
 }));
 
 export const getImageLinks = () => {

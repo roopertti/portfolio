@@ -8,6 +8,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
+import { sitemap } from '../sitemap';
+
 import Footer from '../components/footer';
 
 
@@ -59,9 +61,11 @@ const Layout = ({ children }) => (
           <div>
             <h3>Navigointi</h3>
             <ul>
-              <li><Link to="/">Projektit</Link></li>
-              <li><Link to="/">Osaamiseni</Link></li>
-              <li><Link to="/">Lisätietoja</Link></li>
+              {sitemap.map(site => (
+                <li key={site.name}>
+                  <Link to={site.path}>{site.name}</Link>
+                </li>
+              ))}
             </ul>
           </div>
         </Footer>

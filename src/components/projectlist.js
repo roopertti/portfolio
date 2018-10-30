@@ -6,17 +6,31 @@ import 'slick-carousel/slick/slick.css';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faEye } from '@fortawesome/free-regular-svg-icons';
 
 import { getImageLinks } from '../projectData';
 
 const ListWrapper = styled.div`
     padding: 50px 0;
+
+    @media (max-width: 600px) {
+        padding: 0;
+    }
 `;
 
 const ProjectWrapper = styled.article`
     box-shadow: 0 0 5px var(--dark);
     padding: 80px 100px;
     margin-bottom: 30px;
+
+    @media (max-width: 900px) {
+        padding: 40px 50px;
+    }
+
+    @media (max-width: 600px) {
+        padding: 10px;
+        box-shadow: none;
+    }
 `;
 
 const SliderImage = styled.img`
@@ -69,7 +83,47 @@ const ImageSlider = ({image}) => {
     return null;
 }
 
+const LinkButton = styled.a`
+    border: 1px solid var(--primary);
+    border-radius: 3px;
+    padding: 7px 10px;
+    color: var(--primary);
+    transition-duration: 0.5s;
+    font-size: 1.2em;
+    margin: 5px;
 
+    :hover {
+        background-color: var(--primary);
+        color: white;
+    }
+
+    @media (max-width: 600px) {
+        font-size: 1em;
+        padding: 5px 7px;
+    }
+`;
+
+const renderLink = (link) => {
+    if(link !== null && typeof link === 'string' && link.length > 0) {
+        return (
+            <LinkButton href={link} target="_blank">
+                <span>Vieraile sivulla </span>
+                <FontAwesomeIcon icon={faEye}></FontAwesomeIcon>
+            </LinkButton>
+        );
+    }
+};
+
+const renderGithub = (github) => {
+    if(github !== null && typeof github === 'string' && github.length > 0) {
+        return (
+            <LinkButton href={github} target="_blank">
+                <span>Katso GitHub </span>
+                <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>
+            </LinkButton>
+        );
+    }
+};
 
 const Taglist = styled.div`
     display: flex; 
@@ -77,7 +131,7 @@ const Taglist = styled.div`
 
     span {
         display: inline-block;
-        margin: 3px;
+        margin: 2px;
         background-color: var(--adjacent1);
         padding: 5px 7px;
         border-radius: 10px;
@@ -106,6 +160,10 @@ const ProjectList = ({projects}) => (
                     {project.tags.map((tag, i) => (<span key={i}>{tag}</span>))}
                 </Taglist>
                 <p>{project.text}</p>
+                <div style={{margin: '30px 0'}}>
+                    {renderLink(project.site)}
+                    {renderGithub(project.github)}
+                </div>
                 <div>
                     <ImageSlider image={project.image}></ImageSlider>
                 </div>
