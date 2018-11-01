@@ -63,7 +63,7 @@ export const projectData = [
         name: 'Tämä portfolio sivu!',
         type: 'Oma projekti',
         tags: ['React', 'Gatsby', 'Styled Components'],
-        text: 'Tässä yhteen viikonloppuun nopeasti kasaan paiskittu perus staattisesta sisällöstä koostuva sivusto, tavoitteena kokeilla Gatsby-työkalun ominaisuuksia yhdessä React:in kanssa. Toivottavasti portfolio on asiansa ajanut tähän asti!',
+        text: 'Tässä viikossa kasaan paiskittu perus staattisesta sisällöstä koostuva sivusto, tavoitteena kokeilla Gatsby-työkalun ominaisuuksia yhdessä React:in kanssa. Toivottavasti portfolio on asiansa ajanut tähän asti!',
         published: new Date(2018, 10, 1, 0, 0, 0, 0),
         image: 'portfolio.png',
         github: 'https://github.com/roopertti/portfolio',
