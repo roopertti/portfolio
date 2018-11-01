@@ -10,7 +10,7 @@ import MediumTitle from '../components/mediumTitle';
 import Highlights from '../components/highlights';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLaptop, faStar, faBook, faFileSignature, faMobileAlt, faWheelchair, faPaintBrush, faDatabase, faUpload, faCodeBranch, faServer } from '@fortawesome/free-solid-svg-icons';
+import { faLaptop, faStar, faBook, faFileSignature, faMobileAlt, faWheelchair, faPaintBrush, faDatabase, faCodeBranch, faServer } from '@fortawesome/free-solid-svg-icons';
 import { 
     faJsSquare,
     faReact, 
@@ -38,15 +38,13 @@ const SkillListWrapper = styled.div`
     grid-template-rows: auto;
 
     @media (max-width: 900px) {
-        grid-template-rows: 200px 200px;
+        grid-template-rows: auto;
     }
 
     @media (max-width: 600px) {
         grid-template-columns: 100%;
         grid-template-rows: auto;
     }
-
-    border-bottom: 2px solid var(--adjacent1);
 `;
 
 const SkillList = styled.div`
@@ -151,6 +149,7 @@ const KnowledgePage = () => (
                         </ul>
                     </SkillList>
                 </SkillListWrapper>
+                <Separator></Separator>
             </div>
             <div style={{padding: '40px 0'}}>
                 <MediumTitle style={{textAlign: 'center'}}>PHP <FontAwesomeIcon icon={faPhp}></FontAwesomeIcon></MediumTitle>
@@ -180,6 +179,7 @@ const KnowledgePage = () => (
                         </ul>
                     </SkillList>
                 </SkillListWrapper>
+                <Separator></Separator>
             </div>
             <div style={{padding: '40px 0'}}>
                 <MediumTitle style={{textAlign: 'center'}}>
@@ -239,6 +239,7 @@ const KnowledgePage = () => (
                         </ul>
                     </SkillList>
                 </SkillListWrapper>
+                <Separator></Separator>
             </div>
             <div style={{padding: '40px 0'}}>
                 <MediumTitle style={{textAlign: 'center'}}>Muu osaaminen</MediumTitle>
@@ -301,6 +302,7 @@ const KnowledgePage = () => (
                         </ul>
                     </SkillList>
                 </SkillListWrapper>
+                <Separator></Separator>
             </div>
         </Container>
     </Layout>

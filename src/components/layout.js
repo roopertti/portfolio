@@ -16,7 +16,6 @@ import Footer from '../components/footer';
 import '../base.css';
 
 import Header from './header';
-import Container from './container';
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -51,10 +50,10 @@ const Layout = ({ children }) => (
             <a href="mailto:robert-kuhlmann@outlook.com">
               <FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon>
             </a>
-            <a href="https://www.instagram.com/kuuuulman/" target="_blank">
+            <a href="https://www.instagram.com/kuuuulman/" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faInstagram}></FontAwesomeIcon>
             </a>
-            <a href="https://www.linkedin.com/in/robert-kuhlmann/" target="_blank">
+            <a href="https://www.linkedin.com/in/robert-kuhlmann/" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon>
             </a>
           </div>

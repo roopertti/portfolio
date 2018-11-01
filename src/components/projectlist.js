@@ -29,6 +29,7 @@ const ProjectWrapper = styled.article`
 
     @media (max-width: 600px) {
         padding: 10px;
+        margin-bottom: 120px;
         box-shadow: none;
     }
 `;
@@ -43,7 +44,7 @@ const ImageSlider = ({image}) => {
     const images = getImageLinks();
     console.log(image);
 
-    if(typeof image === 'null') return null;
+    if(image === null) return null;
 
     if(image.constructor === Array) {
         const settings = {

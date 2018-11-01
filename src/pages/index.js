@@ -20,8 +20,8 @@ const IndexPage = () => (
     <Landing>
       <div>
         <h1>Moikka!</h1>
-        <p style={{fontSize: '1.2em', color: 'var(--dark)'}}><strong>Tervetuloa miun sivuille!</strong></p>
-        <p>Näillä sivuilla pääsee hieman "ihastelemaan" minun osaamistani ja muutamia projekteja, joissa olen ollut mukana.</p>
+        <p style={{fontSize: '1.2em', color: 'var(--dark)'}}><strong>Tervetuloa minun sivuille!</strong></p>
+        <p>Näillä sivuilla esittelen hieman minun osaamistani ja muutamia projekteja, joissa olen ollut mukana.</p>
         <Link to="/projektit">Aloita tutustuminen!</Link>
       </div>
       <div style={{textAlign: "center"}}>
@@ -49,7 +49,7 @@ const IndexPage = () => (
       <article>
         <header>
           <BigTitle>
-            Lyhyesti kuka mie oon
+            Lyhyesti kuka olen
           </BigTitle>
         </header>
         <p>Olen Robert Kuhlmann, 24-vuotias reipas miehenalku ja opiskelen nyt neljättä ja viimeistä vuotta Karelia-ammattikorkeakoulussa tietojenkäsittelyn tradenomiksi. Olen opiskellut tutkintoni aikana pääasiassa ohjelmistokehitystä ja tarkemmin ottaen verkkosovelluskehitystä.</p>
