@@ -53,7 +53,7 @@ export const projectData = [
         name: 'Opiskelijakalenteri',
         type: 'Opinnäytetyön toimeksianto',
         tags: ['React', 'Redux', 'Google Firebase', 'Google Cloud Functions','Jest', 'Enzyme', 'Styled Components'],
-        text: 'Opinnäytetyötäni varten toteutuksen alla olevan opiskelijatapahtumakalenteri. Kalenteri tehdään yhden sivun sovelluksena (SPA) käyttämällä nykyään hyvin suosittuja React- ja Redux-kirjastoja. Ominaisuudet pyrtään myös yksikkötestaamaan huolellisesti Jest- ja Enzyme-työkalujen avulla.',
+        text: 'Opinnäytetyötäni varten toteutuksen alla olevan opiskelijatapahtumakalenteri. Kalenteri tehdään yhden sivun sovelluksena (SPA) käyttämällä nykyään hyvin suosittuja React- ja Redux-kirjastoja. Ominaisuudet pyritään myös yksikkötestaamaan huolellisesti Jest- ja Enzyme-työkalujen avulla.',
         published: new Date(2018, 10, 1, 0, 0, 0, 0),
         image: ['oppari1.png', 'oppari2.png'],
         github: null,
