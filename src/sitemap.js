@@ -1,14 +1,14 @@
 export const sitemap = [
     {
-        name: 'Projektit',
-        path: '/projektit'
+        name: 'Projects',
+        path: '/projects'
     },
     {
-        name: 'Osaamiseni',
-        path: '/osaamiseni'    
+        name: 'Knowledge',
+        path: '/knowledge'    
     },
     {
-        name: 'Lisätietoja',
-        path: '/lisatietoja'
+        name: 'More about me',
+        path: '/more-about-me'
     }
 ];

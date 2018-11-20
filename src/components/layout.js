@@ -46,7 +46,7 @@ const Layout = ({ children }) => (
         </div>
         <Footer>
           <div>
-            <h3>Yhteystiedot</h3>
+            <h3>Contact info and networks</h3>
             <a href="mailto:robert-kuhlmann@outlook.com">
               <FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon>
             </a>
@@ -58,7 +58,7 @@ const Layout = ({ children }) => (
             </a>
           </div>
           <div>
-            <h3>Navigointi</h3>
+            <h3>Navigation</h3>
             <ul>
               {sitemap.map(site => (
                 <li key={site.name}>

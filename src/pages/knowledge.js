@@ -82,9 +82,9 @@ const KnowledgePage = () => (
     <Layout>
         <Breadcrumb routeIndex={1}></Breadcrumb>
         <Container style={{paddingTop: 0}}>
-            <BigTitle>Osaamiseni</BigTitle>
-            <p>Projektien ulkopuolella on myös tullut kartoitettua paljon osaamista lukuisiin kirjastoihin, ohjelmointikieliin ja kaikenlaisiin teknologioihin. Kaikki osaaminen ei tällä sivulla esitellyistä projekteista näy suoraan ja suurin osa esimerkiksi töissä tehdyistä projekteista jää uupumaan listalta kokonaan. </p>
-            <p><strong>Täältä näet osaamiseni eriteltynä eri aihekokonaisuuksiin!</strong></p>
+            <BigTitle>Knowledge</BigTitle>
+            <p>Outside of all the projects I've been a part of I have also gained a lot of knowledge on different programming languages, libraries and technologies.</p>
+            <p><strong>Here you can discover my knowledge!</strong></p>
             <Separator></Separator>
             <div style={{padding: '40px 0'}}>
                 <MediumTitle style={{textAlign: 'center'}}>JavaScript <FontAwesomeIcon icon={faJsSquare}></FontAwesomeIcon></MediumTitle>
@@ -93,22 +93,22 @@ const KnowledgePage = () => (
                         <div>
                             <FontAwesomeIcon icon={faLaptop}></FontAwesomeIcon>
                         </div>
-                        <h5>10kk työkokemusta</h5>
+                        <h5>10 months of work experience</h5>
                     </div>
                     <div>
                         <div>
                             <FontAwesomeIcon icon={faStar}></FontAwesomeIcon>
                         </div>
-                        <h5>Oma suosikki</h5>
+                        <h5>My own favorite</h5>
                     </div>
                     <div>
                         <div>
                             <FontAwesomeIcon icon={faBook}></FontAwesomeIcon>
                         </div>
-                        <h5>Useat kirjastot hallussa</h5>
+                        <h5>Full stack knowledge</h5>
                     </div>
                 </Highlights>
-                <p>JavaScript on ollut koko opintojeni ajan läsnä ja olen aktivisesti koodaillut sillä omia projekteja. Siitä on kokonaisuutena muodostunut oma suosikkini ja henkilökohtainen tietäykseni siitä on laajin.</p>
+                <p>I've been using JavaScript the most and I'm using it all the time on my personal projects. I have most knowledge about JavaScript as well.</p>
                 <SkillListWrapper>
                     <SkillList>
                         <h3>Front-end</h3>
@@ -132,7 +132,7 @@ const KnowledgePage = () => (
                         </ul>
                     </SkillList>
                     <SkillList>
-                        <h3>Testaustyökalut</h3>
+                        <h3>Unit testing</h3>
                         <ul>
                             <li>Jest</li>
                             <li>Enzyme</li>
@@ -140,7 +140,7 @@ const KnowledgePage = () => (
                         </ul>
                     </SkillList>
                     <SkillList>
-                        <h3>CLI:t, minifointi- ja bundlaustyökalut ja muut laajennukset</h3>
+                        <h3>CLI tools, minifiers, bundlers and other extensions</h3>
                         <ul>
                             <li>NPM <FontAwesomeIcon icon={faNpm}></FontAwesomeIcon></li>
                             <li>Webpack</li>
@@ -158,24 +158,24 @@ const KnowledgePage = () => (
                         <div>
                             <FontAwesomeIcon icon={faLaptop}></FontAwesomeIcon>
                         </div>
-                        <h5>7kk työkokemusta</h5>
+                        <h5>7 months of work experience</h5>
                     </div>
                     <div>
                         <div>
                             <FontAwesomeIcon icon={faFileSignature}></FontAwesomeIcon>
                         </div>
-                        <h5>Sisällönhallintajärjestelmät</h5>
+                        <h5>Content management systems</h5>
                     </div>
                 </Highlights>
-                <p>PHP on ollut käytössä harjoittelussa, sekä kesätöissä työskennellessä. Olen työskennellyt pääasiassa käyttäen sisällönhallintajärjestelmää taustalla.</p>
+                <p>I've used PHP at my internship and at work. Mostly I've been using it with content management systems. I'm familiar with procedural and object-oriented PHP as well.</p>
                 <SkillListWrapper>
                     <SkillList>
-                        <h3>CMS ja muu osaaminen</h3>
+                        <h3>CMS and other experiences</h3>
                         <ul>
-                            <li>RESTful API:t</li>
+                            <li>RESTful APIs</li>
                             <li>MySQL ja PHPMyAdmin</li>
-                            <li>Wordpress perusteet <FontAwesomeIcon icon={faWordpress}></FontAwesomeIcon></li>
-                            <li>Muut sisällönhallintajärjestelmät</li>
+                            <li>Wordpress basics <FontAwesomeIcon icon={faWordpress}></FontAwesomeIcon></li>
+                            <li>Other content management systems</li>
                         </ul>
                     </SkillList>
                 </SkillListWrapper>
@@ -190,25 +190,25 @@ const KnowledgePage = () => (
                         <div>
                             <FontAwesomeIcon icon={faPaintBrush}></FontAwesomeIcon>
                         </div>
-                        <h5>Kokemus suunnittelusta</h5>
+                        <h5>Design experience</h5>
                     </div>
                     <div>
                         <div>
                             <FontAwesomeIcon icon={faMobileAlt}></FontAwesomeIcon>
                         </div>
-                        <h5>Responsiivisuus</h5>
+                        <h5>Responsive design</h5>
                     </div>
                     <div>
                         <div>
                             <FontAwesomeIcon icon={faWheelchair}></FontAwesomeIcon>
                         </div>
-                        <h5>Saavutettavuus</h5>
+                        <h5>Accessibility</h5>
                     </div>
                 </Highlights>
-                <p>Opintojen ja työskentelyn aikana olen pääasiassa tehnyt kaikki käyttöliittymät HTML:n ja CSS:n avulla. Työskentelyssä olen oppinut suunnittelemaan sivut responsiivisiksi ja saavutettaviksi. Laadukas ja siisti ulkoasu ja käyttöliittymä ovat minulle tärkeitä asoita jokaisessa projektissani.</p>
+                <p>During my studies and jobs I've made all user interfaces with HTML and CSS. During my work I've learned how to create responsive and accessible websites. Responsive design and quality user experience are big priorities for me in every project.</p>
                 <SkillListWrapper>
                     <SkillList>
-                        <h3>Käyttöliittymäkirjastot</h3>
+                        <h3>UI libraries</h3>
                         <ul>
                             <li>Bootstrap</li>
                             <li>MaterialUI</li>
@@ -216,57 +216,57 @@ const KnowledgePage = () => (
                         </ul>
                     </SkillList>
                     <SkillList>
-                        <h3>Esikääntäjät ja laajennukset</h3>
+                        <h3>Preprocessors and extensions</h3>
                         <ul>
-                            <li>Sass perusteet <FontAwesomeIcon icon={faSass}></FontAwesomeIcon></li>
+                            <li>SASS basics <FontAwesomeIcon icon={faSass}></FontAwesomeIcon></li>
                             <li>Styled Components (React)</li>
                         </ul>
                     </SkillList>
                     <SkillList>
-                        <h3>Modernit ominaisuudet</h3>
+                        <h3>Modern CSS features</h3>
                         <ul>
-                            <li>CSS muuttujat</li>
+                            <li>CSS variables</li>
                             <li>Flexbox</li>
                             <li>CSS Grid</li>
                         </ul>
                     </SkillList>
                     <SkillList>
-                        <h3>Tyylikriteerit</h3>
+                        <h3>Style criteria</h3>
                         <ul>
-                            <li>Validi HTML <FontAwesomeIcon icon={faHtml5}></FontAwesomeIcon></li>
-                            <li>Responsiivisuus</li>
-                            <li>Saavutettavuus</li>
+                            <li>Valid HTML <FontAwesomeIcon icon={faHtml5}></FontAwesomeIcon></li>
+                            <li>Responsive design</li>
+                            <li>Accessibility</li>
                         </ul>
                     </SkillList>
                 </SkillListWrapper>
                 <Separator></Separator>
             </div>
             <div style={{padding: '40px 0'}}>
-                <MediumTitle style={{textAlign: 'center'}}>Muu osaaminen</MediumTitle>
+                <MediumTitle style={{textAlign: 'center'}}>Other knowledge</MediumTitle>
                 <Highlights>
                     <div>
                         <div>
                             <FontAwesomeIcon icon={faDatabase}></FontAwesomeIcon>
                         </div>
-                        <h5>Tietokannat</h5>
+                        <h5>Databases</h5>
                     </div>
                     <div>
                         <div>
                             <FontAwesomeIcon icon={faServer}></FontAwesomeIcon>
                         </div>
-                        <h5>Julkaisualustat</h5>
+                        <h5>Hosting providers and platforms</h5>
                     </div>
                     <div>
                         <div>
                             <FontAwesomeIcon icon={faCodeBranch}></FontAwesomeIcon>
                         </div>
-                        <h5>Versionhallinta ja muut työkalut</h5>
+                        <h5>Version control and other tools</h5>
                     </div>
                 </Highlights>
-                <p>Viimeiseksi vielä tarkemmin eriteltynä muita hyödyllisiä työkaluja, tietokantoja, sekä julkaisujärjestelmiä, mitä olen käyttänyt. Myös muut osaamani ohjelmointikielet ovat listattuna.</p>
+                <p>Last but not least I'm introducing my knowledge on other useful tools I'm also experienced with. I've also listed other programming languages I've used.</p>
                 <SkillListWrapper>
                     <SkillList>
-                        <h3>Tietokannat</h3>
+                        <h3>Databases</h3>
                         <ul>
                             <li>MySQL</li>
                             <li>MongoDB</li>
@@ -274,16 +274,16 @@ const KnowledgePage = () => (
                         </ul>
                     </SkillList>
                     <SkillList>
-                        <h3>Julkaisualustat</h3>
+                        <h3>Hosting</h3>
                         <ul>
                             <li>Heroku</li>
                             <li>GitHub Pages <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon></li>
                             <li>Google Firebase <FontAwesomeIcon icon={faGoogle}></FontAwesomeIcon></li>
-                            <li>Docker perusteet <FontAwesomeIcon icon={faDocker}></FontAwesomeIcon></li>
+                            <li>Docker basics <FontAwesomeIcon icon={faDocker}></FontAwesomeIcon></li>
                         </ul>
                     </SkillList>
                     <SkillList>
-                        <h3>Versionhallinta ja muut työkalut</h3>
+                        <h3>Version control and other development tools</h3>
                         <ul>
                             <li>Git <FontAwesomeIcon icon={faGit}></FontAwesomeIcon></li>
                             <li>GitHub <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon></li>
@@ -293,7 +293,7 @@ const KnowledgePage = () => (
                         </ul>
                     </SkillList>
                     <SkillList>
-                        <h3>Ohjelmointikielet, joista perusteet hallussa</h3>
+                        <h3>Programming languages</h3>
                         <ul>
                             <li>C#</li>
                             <li>Java <FontAwesomeIcon icon={faJava}></FontAwesomeIcon></li>

@@ -108,7 +108,7 @@ const renderLink = (link) => {
     if(link !== null && typeof link === 'string' && link.length > 0) {
         return (
             <LinkButton href={link} target="_blank">
-                <span>Vieraile sivulla </span>
+                <span>Visit page </span>
                 <FontAwesomeIcon icon={faEye}></FontAwesomeIcon>
             </LinkButton>
         );
@@ -119,7 +119,7 @@ const renderGithub = (github) => {
     if(github !== null && typeof github === 'string' && github.length > 0) {
         return (
             <LinkButton href={github} target="_blank">
-                <span>Katso GitHub </span>
+                <span>GitHub </span>
                 <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>
             </LinkButton>
         );

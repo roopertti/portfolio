@@ -19,43 +19,43 @@ const IndexPage = () => (
   <Layout>
     <Landing>
       <div>
-        <h1>Moikka!</h1>
-        <p style={{fontSize: '1.2em', color: 'var(--dark)'}}><strong>Tervetuloa minun sivuille!</strong></p>
-        <p>Näillä sivuilla esittelen hieman minun osaamistani ja muutamia projekteja, joissa olen ollut mukana.</p>
-        <Link to="/projektit">Aloita tutustuminen!</Link>
+        <h1>Hi!</h1>
+        <p style={{fontSize: '1.2em', color: 'var(--dark)'}}><strong>Welcome to my page!</strong></p>
+        <p>On this site I will be introducing some of my knowledge and projects I've been developing.</p>
+        <Link to="/projects">Get started!</Link>
       </div>
       <div style={{textAlign: "center"}}>
-        <img src={image} alt="Naamakuva"/>
+        <img src={image} alt="Face image"/>
       </div>
     </Landing>
     <CallToAction>
         <div>
             <span><FontAwesomeIcon icon={faProjectDiagram}></FontAwesomeIcon></span>
-            <Link to="/projektit"><h3>Projektit</h3></Link>
-            <p>Tutustu koulun aikana, sekä vapaa-ajalla työstämiini projektehin!</p>
+            <Link to="/projects"><h3>Projects</h3></Link>
+            <p>See the school projects, work projects and my own projects as well!</p>
         </div>
         <div>
             <span><FontAwesomeIcon icon={faGraduationCap}></FontAwesomeIcon></span>
-            <Link to="/osaamiseni"><h3>Osaamiseni</h3></Link>
-            <p>Tarkastele osaamiani ohjelmointikieliä, kirjastoja, sekä kaikkea muuta!</p>
+            <Link to="/knowledge"><h3>Knowledge</h3></Link>
+            <p>Check out programming languages, libraries and tools I am familar with!</p>
         </div>
         <div>
             <span><FontAwesomeIcon icon={faInfoCircle}></FontAwesomeIcon></span>
-            <Link to="/lisatietoja"><h3>Lisätietoja</h3></Link>
-            <p>Tutustu myös minun verkostoihini ja ota yhteyttä!</p>
+            <Link to="/lisatietoja"><h3>More about me</h3></Link>
+            <p>My education, work experience and positions of trust can be seen here!</p>
         </div>
     </CallToAction>
     <Container style={{paddingTop: 100, paddingBottom: 100}}>
       <article>
         <header>
           <BigTitle>
-            Lyhyesti kuka olen
+            Who am I?
           </BigTitle>
         </header>
-        <p>Olen Robert Kuhlmann, 24-vuotias reipas miehenalku ja opiskelen nyt neljättä ja viimeistä vuotta Karelia-ammattikorkeakoulussa tietojenkäsittelyn tradenomiksi. Olen opiskellut tutkintoni aikana pääasiassa ohjelmistokehitystä ja tarkemmin ottaen verkkosovelluskehitystä.</p>
-        <p>Siitä huolimatta, että olen opintoni pääosin etänä suorittanut, olen myös toiminut opiskelija-aktiivina Karelia-ammattikorkeakoulun opiskelijakunta POKAn puheenjohtajana ja hallituksen jäsenenä opintojeni aikana. Sen lisäksi on myös kokemusta tuutoroinnista ja kaikenlaisesta oheistoiminnasta, mitä opintojen aikana on ollut.</p>
-        <p>Ohjelmoinnista on tullut minulle opintojeni myötä jo erittäin merkittävä harrastus ja teen sitä jatkuvasti myös vapaa-ajalla. Koitan jatkuvasti löytää uusia teknologioita ja keksiä itselleni pääni menoksi uusia projekteja.</p>
-        <p><strong>Toivon pääseväni sellaisiin työtehtäviin, missä pääsen jatkuvasti kehittämään ja haastamaan itseäni!</strong></p>
+        <p>My name is Robert Kuhlmann and I'm a 24 years old. I'm currently studying my fourth and last year as Bachelor of Business Administration and Information Technology at Karelia UAS. I have mostly studed web development and software development.</p>
+        <p>I have studied my whole degree as distance studies but at the same time I have been actively involved in our student union's board as a chairperson and as a member as well.</p>
+        <p>Programming has become somewhat of a passion to me during my studies. I constantly study programming during my free time and I'm pretty sure I will never get bored if it.</p>
+        <p><strong>I wish to get a job where I can constanlty learn new things and challenge myself!</strong></p>
         <Separator></Separator>
       </article>
     </Container>

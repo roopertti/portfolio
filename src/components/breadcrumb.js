@@ -37,7 +37,7 @@ const BreadCrumbWrapper = styled.div`
 
 const Breadcrumb = ({routeIndex}) => (
     <BreadCrumbWrapper>
-        <Link to="/">Etusivu</Link>
+        <Link to="/">Frontpage</Link>
         <FontAwesomeIcon icon={faAngleRight}></FontAwesomeIcon>
         <span><strong style={{color: 'var(--primary)'}}>{sitemap[routeIndex].name}</strong></span>
     </BreadCrumbWrapper>
