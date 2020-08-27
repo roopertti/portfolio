@@ -21,7 +21,7 @@ const IndexPage = () => (
       <div>
         <h1>Hello there!</h1>
         <p style={{fontSize: '1.2em', color: 'var(--dark)'}}><strong>Welcome to my portfolio page!</strong></p>
-        <p>On this site I will be introducing myself through different projects and knowledge I have gained during my studies.</p>
+        <p>On this site I will be introducing my skills through different projects and knowledge I have gained during my studies.</p>
         <Link to="/projects">Get started!</Link>
       </div>
       <div style={{textAlign: "center"}}>
@@ -41,7 +41,7 @@ const IndexPage = () => (
         </div>
         <div>
             <span><FontAwesomeIcon icon={faInfoCircle}></FontAwesomeIcon></span>
-            <Link to="/lisatietoja"><h3>More about me</h3></Link>
+            <Link to="/more-about-me"><h3>More about me</h3></Link>
             <p>My education, work experience and positions of trust can be seen here!</p>
         </div>
     </CallToAction>
@@ -52,10 +52,9 @@ const IndexPage = () => (
             Who am I?
           </BigTitle>
         </header>
-        <p>My name is Robert Kuhlmann and I'm a 24-year-old young man ready to make a career as a web developer! I'm currently studying my fourth and last year as Bachelor of Business Administration and Information Technology at Karelia UAS. During my studies I have developed games, software, websites and also gained the basic knowledge on E-Commerce.</p>
-        <p>I have studied my whole degree as distance studies but at the same time I have been actively involved in our student union's board as a chairperson and as a member as well.</p>
-        <p>Programming has become somewhat of a passion to me during my studies. I constantly study programming during my free time since it entertains me a lot and helps me to express my creativity.</p>
-        <p><strong>I wish to get a job where I can constanlty learn new things and challenge myself!</strong></p>
+        <p>My name is Robert Kuhlmann and I'm a 26-year-old software/web developer from Joensuu, Finland! I'm currently working as a Software Developer at Valamis.</p>
+        <p>Programming is not just a job for me - it is a passion and a precious hobby which helps me to express my creativity.</p>
+        <p><strong>Feel free to look around!</strong></p>
         <Separator></Separator>
       </article>
     </Container>
